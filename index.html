@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Àlesky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icono.png">
+</head>
+<body>
+    <div class="container">
+        <audio id="audio" src="cancion.mp3"></audio>
+        <div id="message-box" class="message"></div>
+        
+        <div class="cake-wrapper">
+            <svg id="cake-svg" width="320" height="320" viewBox="0 0 320 320">
+                <defs>
+                    <radialGradient id="gradPeach" cx="0" cy="0" r="150" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#FFF3E8"/>
+                        <stop offset="65%" stop-color="#FDDBCB"/>
+                        <stop offset="100%" stop-color="#FCD0C3"/>
+                    </radialGradient>
+                    <radialGradient id="gradPink" cx="0" cy="0" r="150" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#FFE4DE"/>
+                        <stop offset="65%" stop-color="#FAC2BC"/>
+                        <stop offset="100%" stop-color="#F7B8B2"/>
+                    </radialGradient>
+                    <radialGradient id="flameGlow" cx="50%" cy="35%" r="65%">
+                        <stop offset="0%" stop-color="#FFF3B0"/>
+                        <stop offset="55%" stop-color="#F6D98B"/>
+                        <stop offset="100%" stop-color="#E8B1AA"/>
+                    </radialGradient>
+                </defs>
+                <g transform="translate(160,160)">
+                    <circle class="plate-shadow" cx="0" cy="0" r="152"/>
+                    
+                    <g class="piece" data-index="0">
+                        <g transform="rotate(0)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPeach)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="1">
+                        <g transform="rotate(45)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPink)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="2">
+                        <g transform="rotate(90)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPeach)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="3">
+                        <g transform="rotate(135)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPink)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="4">
+                        <g transform="rotate(180)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPeach)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="5">
+                        <g transform="rotate(225)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPink)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="6">
+                        <g transform="rotate(270)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPeach)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+                    <g class="piece" data-index="7">
+                        <g transform="rotate(315)">
+                            <path class="slice" d="M 0 0 L 0 -140 A 140 140 0 0 1 98.99 -98.99 Z" fill="url(#gradPink)" />
+                            <g class="rosette" transform="translate(46, -111)">
+                                <circle class="petal" cx="-6" cy="-6" r="6" />
+                                <circle class="petal" cx="6" cy="-6" r="6" />
+                                <circle class="petal" cx="-6" cy="6" r="6" />
+                                <circle class="petal" cx="6" cy="6" r="6" />
+                                <circle class="petal-center" cx="0" cy="0" r="5" />
+                                <circle class="petal-dot" cx="0" cy="0" r="2" />
+                            </g>
+                        </g>
+                    </g>
+
+                </g>
+            </svg>
+            
+            <div id="candle-container">
+                <div id="flame"></div>
+                <div id="candle"><span class="ribbon"></span></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-play">Empezar fiestita</button>
+            <button id="btn-apagar" class="hidden">Apagar velita</button>
+            <button id="btn-cortar" class="hidden">Cortar pastelito</button>
+            <button id="btn-comer" class="hidden">Comer una rebanadita</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="letter">
+            <p>Hola, hijiya beya. Feliz cumpleaños. 💗</p><br>
+            <p>Un millón de veces te he dicho que has sido de las únicas cosas buenas que saqué de este lugar, y hoy quiero repetírtelo una vez más. Conocerte fue como darle una luz inexplicable a mi vida.</p>
+            <p>Te amo profunda y eternamente por la hermosa nena que eres. Jamás podría dejar de cuidar a mi bebé, ni cansarme de repetir que tu bonita personalidad es inexplicablemente perfecta para mí.</p>
+            <p>Tu risa, tu apoyo, tu compañía, la paciencia y la inteligencia que tienes son un regalo para mi vida. Gracias por estar conmigo, por hacer mis días más bonitos y por ser exactamente quien eres.</p>
+            <button id="btn-close-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
